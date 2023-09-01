@@ -1,0 +1,147 @@
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*gm ::::::::::::::::::::::::::: Pagination in HTML CSS & JavaScript ::::::::::::::::::::::::::: */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/* Import Google font - Poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+/* font-family: 'Chango', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsla(0, 0%, 20%, 0.87);
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.header {
+    margin: 1.7em auto 0.5em auto;
+    position: absolute;
+    top: 3%;
+    left: 28%;
+    width: 40%;
+    height: 20%;
+    background-color: powderblue;
+    border: 5px double hsla(240, 98%, 26%, 0.993);
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    filter: drop-shadow(0px 0px 5px hsla(0, 0%, 0%, 0.593));
+    box-shadow: inset 0px 0px 6px hsla(0, 0%, 0%, 0.993);
+}
+
+.header .header-image {
+    margin: -2em 0.5em 0.5em auto;
+    position: relative;
+    display: inline-block;
+    width: 6%;
+    vertical-align: middle;
+    text-align: center;
+    filter: drop-shadow(1.2px 1.5px 3px hsla(0, 0%, 0%, 0.693));
+}
+
+.header .header-h1 {
+    margin: 0.35em auto 0em auto;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Chango', cursive;
+    font-size: 2.55rem;
+    font-weight: 400;
+    color: hsla(240, 98%, 26%, 0.993);
+    text-shadow: 1px 2px 3px hsla(0, 0%, 0%, 0.493);
+}
+
+.header-h1 .register {
+    font-size: 0.4em;
+}
+
+.header .header-h4 {
+    margin: 1.35em auto 0.8em auto;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.55rem;
+    font-weight: 400;
+    color: hsla(37, 85%, 60%, 0.998);
+    text-shadow: 1px 2px 3px hsla(0, 0%, 0%, 0.793);
+}
+
+.container,
+.button,
+.links,
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 6.35em auto 0em auto;
+    position: absolute;
+    top: 60%;
+    left: 21%;
+    width: 39%;
+    padding: 20px;
+    border-radius: 8px;
+    column-gap: 12px;
+    background: hsla(187, 52%, 80%, 0.998);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    border: none;
+}
+
+.button i {
+    pointer-events: none;
+}
+
+.button:disabled {
+    color: #b3b3b3;
+    pointer-events: none;
+}
+
+.button,
+.link {
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    color: #666666;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.links {
+    column-gap: 12px;
+}
+
+.link {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.button:hover,
+.link:hover {
+    color: #fff;
+    background: #4070f4;
+}
+
+.link.active::before {
+    color: #fff;
+    background: #4070f4;
+}
+
+.link.active::after {
+    color: #fff;
+    background: #4070f4;
+}

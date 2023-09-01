@@ -1,0 +1,13 @@
+{
+	"name": "js_pagination_tutorial",
+	"version": "1.0.0",
+	"description": "Pagination in HTML, CSS, JavaScript",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "jest",
+		"start": "live-server --browser=CHROME --open=views/index.html"
+	},
+	"author": "Gordon R Mullen Jr <webelistics@gmail.com>",
+	"license": "MIT"
+}
